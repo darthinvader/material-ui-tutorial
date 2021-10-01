@@ -1,8 +1,8 @@
 import React from "react";
-import { Button, ButtonGroup, Typography } from "@material-ui/core";
+import { Button, ButtonGroup, Container, Typography } from "@material-ui/core";
 export default function Create() {
   return (
-    <div>
+    <Container>
       <Typography variant="h1" color="primary" align="center">
         Create A New Note
       </Typography>
@@ -40,6 +40,6 @@ export default function Create() {
         <Button type="submit">Two</Button>
         <Button type="submit">Three</Button>
       </ButtonGroup> */}
-    </div>
+    </Container>
   );
 }
