@@ -1,15 +1,30 @@
 import React from "react";
-import { Button, Container, Typography } from "@material-ui/core";
-import AcUnitOutlinedIcon from "@mui/icons-material/AcUnitOutlined";
+import { Button, Container, Typography } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles({
+  btn: {
+    fontSize: 60,
+    backgroundColor: "violet!",
+    "&:hover": {
+      backgroundColor: "blue",
+    },
+  },
+  title: { textDecoration: "underline" },
+});
+
 export default function Create() {
+  const classes = useStyles();
+
   return (
     <Container>
       <Typography variant="h1" color="primary" align="center">
         Create A New Note
       </Typography>
       <Typography
+        className={classes.title}
         variant="h6"
         component="h2"
         gutterBottom
