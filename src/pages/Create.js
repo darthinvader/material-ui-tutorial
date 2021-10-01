@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Button, ButtonGroup, Typography } from "@material-ui/core";
 export default function Create() {
   return (
     <div>
@@ -21,6 +21,25 @@ export default function Create() {
         dasgdlagsdljgasljdajsd ajshd ashd lkasdlas hdklash
         dasgdlagsdljgasljdajsd ajshd ashd lkasdlas hdklash dasgdlagsdljgasljd
       </Typography>
+      <Button
+        onClick={() => {
+          console.log("You clicked me");
+        }}
+        type="submit"
+        color="secondary"
+        variant="contained"
+        disableElevation
+      >
+        Submit
+      </Button>
+      {/* <Button type="submit" color="primary">
+        Submit
+      </Button> */}
+      {/* <ButtonGroup color="secondary" variant="contained">
+        <Button type="submit">One</Button>
+        <Button type="submit">Two</Button>
+        <Button type="submit">Three</Button>
+      </ButtonGroup> */}
     </div>
   );
 }
